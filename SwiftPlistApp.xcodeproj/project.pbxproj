@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D24B6290D18DF0051C762 /* GradeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D24B5290D18DF0051C762 /* GradeDetailsViewController.swift */; };
 		0421BEA7290CF6840005151E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEA6290CF6840005151E /* AppDelegate.swift */; };
 		0421BEA9290CF6840005151E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEA8290CF6840005151E /* SceneDelegate.swift */; };
 		0421BEAB290CF6840005151E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEAA290CF6840005151E /* ViewController.swift */; };
 		0421BEAE290CF6840005151E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BEAC290CF6840005151E /* Main.storyboard */; };
 		0421BEB0290CF6880005151E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0421BEAF290CF6880005151E /* Assets.xcassets */; };
 		0421BEB3290CF6880005151E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BEB1290CF6880005151E /* LaunchScreen.storyboard */; };
+		0421BEBB290CFD420005151E /* GradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEBA290CFD420005151E /* GradeStore.swift */; };
+		0421BEBD290CFE900005151E /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEBC290CFE900005151E /* Grade.swift */; };
+		0421BEBF290D0D1F0005151E /* GradesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BEBE290D0D1F0005151E /* GradesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040D24B5290D18DF0051C762 /* GradeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeDetailsViewController.swift; sourceTree = "<group>"; };
 		0421BEA3290CF6840005151E /* SwiftPlistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421BEA6290CF6840005151E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0421BEA8290CF6840005151E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		0421BEAF290CF6880005151E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0421BEB2290CF6880005151E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0421BEB4290CF6880005151E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0421BEBA290CFD420005151E /* GradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeStore.swift; sourceTree = "<group>"; };
+		0421BEBC290CFE900005151E /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		0421BEBE290D0D1F0005151E /* GradesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				0421BEA6290CF6840005151E /* AppDelegate.swift */,
 				0421BEA8290CF6840005151E /* SceneDelegate.swift */,
-				0421BEAA290CF6840005151E /* ViewController.swift */,
+				04F5B3C1290D8C440020F805 /* ViewControllers */,
+				04F5B3C4290D8C740020F805 /* DBRepo */,
+				04F5B3C3290D8C640020F805 /* Custom Cells */,
+				04F5B3C5290D8C870020F805 /* Model */,
 				0421BEAC290CF6840005151E /* Main.storyboard */,
 				0421BEAF290CF6880005151E /* Assets.xcassets */,
 				0421BEB1290CF6880005151E /* LaunchScreen.storyboard */,
 				0421BEB4290CF6880005151E /* Info.plist */,
 			);
 			path = SwiftPlistApp;
+			sourceTree = "<group>";
+		};
+		04F5B3C1290D8C440020F805 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0421BEAA290CF6840005151E /* ViewController.swift */,
+				040D24B5290D18DF0051C762 /* GradeDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04F5B3C3290D8C640020F805 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0421BEBE290D0D1F0005151E /* GradesTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		04F5B3C4290D8C740020F805 /* DBRepo */ = {
+			isa = PBXGroup;
+			children = (
+				0421BEBA290CFD420005151E /* GradeStore.swift */,
+			);
+			path = DBRepo;
+			sourceTree = "<group>";
+		};
+		04F5B3C5290D8C870020F805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0421BEBC290CFE900005151E /* Grade.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +185,10 @@
 				0421BEAB290CF6840005151E /* ViewController.swift in Sources */,
 				0421BEA7290CF6840005151E /* AppDelegate.swift in Sources */,
 				0421BEA9290CF6840005151E /* SceneDelegate.swift in Sources */,
+				0421BEBF290D0D1F0005151E /* GradesTableViewCell.swift in Sources */,
+				040D24B6290D18DF0051C762 /* GradeDetailsViewController.swift in Sources */,
+				0421BEBD290CFE900005151E /* Grade.swift in Sources */,
+				0421BEBB290CFD420005151E /* GradeStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
